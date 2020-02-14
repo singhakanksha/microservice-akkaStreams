@@ -22,7 +22,7 @@ object RealWorlExample extends App{
 
   val githubConnectionFlow = http.outgoingConnectionHttps(
     githubSource)
-  val authorization = Authorization(BasicHttpCredentials("singhakanksha", "668682d8869f2e904d3885db457e70a8605d7aef"))
+  val authorization = Authorization(BasicHttpCredentials("singhakanksha", "*****"))
   val eventBatchSource: Source[EventBatch, NotUsed] =
   // The stream start with a single request object ...
     Source.single(HttpRequest(
